@@ -1,9 +1,5 @@
-import React, { useLayoutEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react';
 import { WeddingDetails } from '../types/wedding';
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface CoupleTextCardProps {
   fullName: string;
@@ -24,35 +20,6 @@ interface CoupleSectionProps {
 }
 
 export const CoupleSection: React.FC<CoupleSectionProps> = ({ details }) => {
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const cornersRef = useRef<HTMLImageElement[]>([]);
-
-  const addCornerRef = (el: HTMLImageElement | null) => {
-    if (el && !cornersRef.current.includes(el)) {
-      cornersRef.current.push(el);
-    }
-  };
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      if (cornersRef.current.length > 0 && sectionRef.current) {
-        gsap.from(cornersRef.current, {
-          opacity: 0,
-          duration: 1,
-          stagger: 0.08,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 75%',
-            once: true,
-          },
-        });
-      }
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   const renderBride = () => (
     <CoupleTextCard
       fullName={details.brideFullName}
@@ -68,31 +35,7 @@ export const CoupleSection: React.FC<CoupleSectionProps> = ({ details }) => {
   );
 
   return (
-    <section className="couple-section no-photo-couple" ref={sectionRef}>
-      <img
-        src="/assets/couple-section-flower.png"
-        className="corner top-left"
-        alt="Decorative flowers"
-        ref={addCornerRef}
-      />
-      <img
-        src="/assets/couple-section-flower.png"
-        className="corner top-right"
-        alt="Decorative flowers"
-        ref={addCornerRef}
-      />
-      <img
-        src="/assets/couple-section-flower.png"
-        className="corner bottom-left"
-        alt="Decorative flowers"
-        ref={addCornerRef}
-      />
-      <img
-        src="/assets/couple-section-flower.png"
-        className="corner bottom-right"
-        alt="Decorative flowers"
-        ref={addCornerRef}
-      />
+    <section className="couple-section no-photo-couple">
 
       {details.coupleImageUrl && (
         <div className="couple-portrait-wrapper" data-aos="fade-up">

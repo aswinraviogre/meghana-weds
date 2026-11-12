@@ -93,17 +93,6 @@ export const FamilyBlessings: React.FC<FamilyBlessingsProps> = ({ details }) => 
           <FamilyRoleCard card={details.brideFamilyCard} />
           <FamilyRoleCard card={details.groomFamilyCard} />
         </div>
-
-        <div className="family-blessings-footer-card" data-aos="fade-up">
-          <p className="family-label">{details.invitedByLabel}</p>
-          <p className="family-names-primary">{details.invitedByNames}</p>
-
-          <FamilyOrnamentDivider />
-
-          <p className="family-label">{details.complimentsLabel}</p>
-          <p className="family-names-secondary">{details.complimentsNames}</p>
-          <p className="family-near-dear">{details.nearAndDearText}</p>
-        </div>
       </div>
 
       <img

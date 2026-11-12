@@ -1,0 +1,20 @@
+{
+  "short_name": "Meghana & Dinesh",
+  "name": "Mandadapu’s Wedding Invitation - Meghana & Dinesh",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/smallicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#98a186",
+  "background_color": "#f7ebdd"
+}

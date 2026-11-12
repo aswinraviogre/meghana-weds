@@ -1,0 +1,13 @@
+/og-thumbnail.jpg
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
+  Content-Type: image/jpeg
+
+/smallicon.png
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
+
+/apple-touch-icon.png
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
+

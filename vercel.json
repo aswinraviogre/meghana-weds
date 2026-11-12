@@ -1,0 +1,37 @@
+{
+  "functions": {
+    "api/index.mjs": {
+      "includeFiles": "dist/index.html"
+    }
+  },
+  "headers": [
+    {
+      "source": "/og-thumbnail.jpg",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" },
+        { "key": "Content-Type", "value": "image/jpeg" }
+      ]
+    },
+    {
+      "source": "/smallicon.png",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!assets/|og-thumbnail\\.jpg|smallicon\\.png|apple-touch-icon\\.png|manifest\\.json|slider-corner\\.png|slider-right-corner\\.png|_redirects|_headers|favicon\\.ico).*)",
+      "destination": "/api/index"
+    }
+  ]
+}

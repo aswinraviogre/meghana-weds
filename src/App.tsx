@@ -31,7 +31,7 @@ export const App: React.FC = () => {
       weddingDetails.displayOrder === 'brideFirst'
         ? `${weddingDetails.brideShortName} & ${weddingDetails.groomShortName}`
         : `${weddingDetails.groomShortName} & ${weddingDetails.brideShortName}`;
-    document.title = `${displayNames} - Mandadapu’s Wedding Invitation`;
+    document.title = `${displayNames} - Wedding Invitation`;
     syncSocialMetaTags();
   }, []);
 

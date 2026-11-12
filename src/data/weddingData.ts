@@ -13,6 +13,7 @@ export const weddingDetails: WeddingDetails = {
   groomParents:
     '(Younger Son of Sri Madupuru Venkata Rama Mohana Rao - Smt. Lakshmi, Nellore)',
   coupleDividerText: 'with',
+  coupleTagline: 'Two Hearts, One Journey',
   coupleImageUrl: '/assets/couple.jpg',
   coverIcon: 'GanpatiIcon',
   coverText: 'Srirasthu | Subhamasthu | Avighnamasthu',

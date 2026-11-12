@@ -29,6 +29,7 @@ export interface WeddingDetails {
   groomFullName: string;
   groomParents: string;
   coupleDividerText: string;
+  coupleTagline?: string;
   coupleImageUrl: string;
   coverIcon: 'GanpatiIcon';
   coverText: string;

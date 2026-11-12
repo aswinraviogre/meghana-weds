@@ -1309,6 +1309,17 @@ p {
   text-align: center;
 }
 
+.couple-section-heading {
+  color: rgb(33, 37, 41);
+  font-family: 'Imperial Script', cursive;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
 .couple-portrait-wrapper {
   margin: 0 auto 32px;
   max-width: 310px;
@@ -1404,6 +1415,10 @@ p {
   .couple-section.no-photo-couple {
     padding: 95px 30px 105px;
   }
+  .couple-section-heading {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
   .couple-wrapper {
     align-items: center;
     display: flex;
@@ -1443,6 +1458,10 @@ p {
 @media (min-width: 1000px) {
   .couple-section.no-photo-couple {
     padding: 105px 80px 115px;
+  }
+  .couple-section-heading {
+    font-size: 56px;
+    margin-bottom: 36px;
   }
   .couple-wrapper {
     gap: 24px;

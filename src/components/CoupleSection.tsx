@@ -36,6 +36,11 @@ export const CoupleSection: React.FC<CoupleSectionProps> = ({ details }) => {
 
   return (
     <section className="couple-section no-photo-couple">
+      {details.coupleTagline && (
+        <h1 className="couple-section-heading" data-aos="fade-up">
+          {details.coupleTagline}
+        </h1>
+      )}
 
       {details.coupleImageUrl && (
         <div className="couple-portrait-wrapper" data-aos="fade-up">

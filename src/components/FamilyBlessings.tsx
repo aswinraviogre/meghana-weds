@@ -1,13 +1,34 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { WeddingDetails } from '../types/wedding';
+import { FamilyCardInfo, WeddingDetails } from '../types/wedding';
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface FamilyBlessingsProps {
   details: WeddingDetails;
 }
+
+const FamilyOrnamentDivider: React.FC = () => (
+  <div className="family-ornament-divider" aria-hidden="true">
+    <span className="family-ornament-line" />
+    <span className="family-ornament-flower">❀</span>
+    <span className="family-ornament-line" />
+  </div>
+);
+
+interface FamilyRoleCardProps {
+  card: FamilyCardInfo;
+}
+
+const FamilyRoleCard: React.FC<FamilyRoleCardProps> = ({ card }) => (
+  <article className="family-card" data-aos="fade-up">
+    <span className="family-card-role">{card.roleLabel}</span>
+    <FamilyOrnamentDivider />
+    <h3 className="family-card-parents">{card.parentsNames}</h3>
+    <p className="family-card-invite">{card.inviteLine}</p>
+  </article>
+);
 
 export const FamilyBlessings: React.FC<FamilyBlessingsProps> = ({ details }) => {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -61,17 +82,24 @@ export const FamilyBlessings: React.FC<FamilyBlessingsProps> = ({ details }) => 
         className="t1-slider-right-corner"
       />
 
-      <div className="family-blessings-inner" data-aos="fade-up">
-        <div className="family-block">
-          <h2 className="family-script-heading">{details.invitedByLabel}</h2>
+      <div className="family-blessings-inner">
+        <header className="family-section-header" data-aos="fade-up">
+          <p className="family-kicker">{details.familiesKicker}</p>
+          <h2 className="family-main-heading">{details.familiesHeading}</h2>
+          <FamilyOrnamentDivider />
+        </header>
+
+        <div className="family-cards-grid">
+          <FamilyRoleCard card={details.brideFamilyCard} />
+          <FamilyRoleCard card={details.groomFamilyCard} />
+        </div>
+
+        <div className="family-blessings-footer-card" data-aos="fade-up">
+          <p className="family-label">{details.invitedByLabel}</p>
           <p className="family-names-primary">{details.invitedByNames}</p>
-        </div>
 
-        <div className="family-divider" aria-hidden="true">
-          <span>❀</span>
-        </div>
+          <FamilyOrnamentDivider />
 
-        <div className="family-block">
           <p className="family-label">{details.complimentsLabel}</p>
           <p className="family-names-secondary">{details.complimentsNames}</p>
           <p className="family-near-dear">{details.nearAndDearText}</p>
@@ -87,4 +115,3 @@ export const FamilyBlessings: React.FC<FamilyBlessingsProps> = ({ details }) => 
     </section>
   );
 };
-

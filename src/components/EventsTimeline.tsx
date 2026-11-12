@@ -159,7 +159,7 @@ export const EventsTimeline: React.FC<EventsTimelineProps> = ({ events, theme })
 
               <div className="event-card">
                 <div className={`event-top ${side}`}>
-                  <h2 className="event-title">❀ {event.eventName} ❀</h2>
+                  <h2 className="event-title">{event.eventName}</h2>
                   <span className="event-time">{event.eventTime}</span>
                 </div>
 

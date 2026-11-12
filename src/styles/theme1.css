@@ -2042,115 +2042,186 @@ p {
 }
 
 /* =========================================================
-   Family Blessings & Invited By Section
+   Family Blessings & The Families Cards Section
    ========================================================= */
 .family-blessings-section {
-  padding: 95px 24px 115px;
+  background: linear-gradient(180deg, #b8c2a6 0%, #98a186 100%);
+  padding: 90px 20px 108px;
 }
 
 .family-blessings-inner {
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 920px;
   position: relative;
   text-align: center;
   z-index: 2;
 }
 
-.family-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.family-section-header {
+  margin: 0 auto 30px;
+  max-width: 520px;
 }
 
-.family-script-heading {
-  color: #ffffff;
-  font-family: 'Imperial Script', cursive;
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 1.1;
-  margin: 0 0 12px;
-}
-
-.family-names-primary {
-  color: #f8f6ef;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+.family-kicker {
+  color: #4f5940;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11.5px;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.family-divider {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
-  margin: 26px 0;
-}
-
-.family-label {
-  color: rgba(248, 246, 239, 0.9);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  margin: 0 0 10px;
+  letter-spacing: 0.24em;
+  line-height: 1.4;
+  margin: 0 0 8px;
   text-transform: uppercase;
 }
 
-.family-names-secondary {
-  color: #ffffff;
+.family-main-heading {
+  color: #762028;
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.family-ornament-divider {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 14px auto;
+  max-width: 210px;
+}
+
+.family-ornament-line {
+  background: linear-gradient(90deg, transparent, rgba(191, 152, 102, 0.55), transparent);
+  flex: 1 1 0%;
+  height: 1px;
+}
+
+.family-ornament-flower {
+  color: #b68c54;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.family-cards-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.family-card,
+.family-blessings-footer-card {
+  background: rgba(245, 240, 231, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 22px;
+  box-shadow: 0 14px 36px rgba(38, 46, 30, 0.14);
+  box-sizing: border-box;
+  padding: 28px 24px 30px;
+}
+
+.family-card-role,
+.family-label {
+  color: #5c534a;
+  display: block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  line-height: 1.4;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.family-card-parents {
+  color: #241f1c;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 14px 0 12px;
+}
+
+.family-card-invite {
+  color: #524940;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 21px;
+  font-size: 17px;
+  font-style: italic;
   font-weight: 500;
   line-height: 1.5;
-  margin: 0 0 8px;
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.family-blessings-footer-card {
+  background: rgba(245, 240, 231, 0.9);
+  margin: 24px auto 0;
+  max-width: 520px;
+  padding: 24px 24px 26px;
+}
+
+.family-names-primary {
+  color: #241f1c;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 8px 0 6px;
+}
+
+.family-names-secondary {
+  color: #2e2824;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.48;
+  margin: 8px 0 6px;
 }
 
 .family-near-dear {
-  color: #f7ebdd;
-  font-family: 'Cormorant Upright', serif;
-  font-size: 22px;
+  color: #762028;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   margin: 4px 0 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .family-blessings-section {
-    padding: 110px 40px 130px;
+    padding: 105px 40px 120px;
   }
-  .family-script-heading {
-    font-size: 54px;
+  .family-main-heading {
+    font-size: 62px;
   }
-  .family-names-primary {
-    font-size: 26px;
+  .family-cards-grid {
+    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 920px;
   }
-  .family-label {
-    font-size: 18px;
+  .family-card {
+    padding: 34px 30px 36px;
   }
-  .family-names-secondary {
+  .family-card-parents {
     font-size: 25px;
   }
-  .family-near-dear {
-    font-size: 25px;
+  .family-card-invite {
+    font-size: 18.5px;
   }
-}
-
-@media (min-width: 1000px) {
-  .family-script-heading {
-    font-size: 58px;
+  .family-blessings-footer-card {
+    margin-top: 28px;
+    max-width: 680px;
+    padding: 28px 34px 30px;
   }
   .family-names-primary {
-    font-size: 28px;
-  }
-  .family-label {
-    font-size: 19px;
+    font-size: 22px;
   }
   .family-names-secondary {
-    font-size: 27px;
+    font-size: 20px;
   }
   .family-near-dear {
-    font-size: 27px;
+    font-size: 21px;
   }
 }
 
@@ -2239,8 +2310,8 @@ p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 16px;
   letter-spacing: 0.5px;
-  line-height: 1.2;
-  padding: 10px 20px;
+  line-height: 1.3;
+  padding: 12px 90px;
   text-align: center;
 }
 
@@ -2257,7 +2328,7 @@ p {
 @media (min-width: 374px) {
   .branding-footer {
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 12px 90px;
   }
   .rsvp-empty-heading {
     font-size: 32px;
@@ -2271,7 +2342,7 @@ p {
 @media (min-width: 424px) {
   .branding-footer {
     font-size: 19px;
-    padding: 10px 20px;
+    padding: 12px 90px;
   }
   .rsvp-empty-heading {
     font-size: 34px;

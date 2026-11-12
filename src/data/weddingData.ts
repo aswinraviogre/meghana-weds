@@ -21,6 +21,18 @@ export const weddingDetails: WeddingDetails = {
   countDownTime: '20:32',
   blessingMessage:
     'We cordially request your gracious presence to bless the couple with everlasting love & happiness at the auspicious marriage of our Grand Daughter.',
+  familiesKicker: 'WITH LOVE & BLESSINGS',
+  familiesHeading: 'The Families',
+  brideFamilyCard: {
+    roleLabel: "BRIDE'S FAMILY",
+    parentsNames: 'Sri Mandadapu Sai Babu & Smt. Sailaja (Late)',
+    inviteLine: 'Cordially invite you to celebrate the wedding of their only daughter Meghana',
+  },
+  groomFamilyCard: {
+    roleLabel: "GROOM'S FAMILY",
+    parentsNames: 'Sri Madhupuru Venkata Rama Mohana Rao & Smt. Lakshmi',
+    inviteLine: 'Cordially invite you to celebrate the wedding of their younger son Dinesh (Nellore)',
+  },
   invitedByLabel: 'Invited by',
   invitedByNames: 'Mandadapu Acthaiah - Smt. Bharathi',
   complimentsLabel: 'With best compliments from:',
@@ -35,23 +47,23 @@ export const weddingDetails: WeddingDetails = {
 export const weddingEvents: WeddingEvent[] = [
   {
     _id: 'mangala-snanam-haldi',
-    eventName: 'MANGALA SNANAM & HALDI',
+    eventName: 'Haldi',
     eventDate: '2026-11-25',
-    eventTime: '7:30 AM',
+    eventTime: '07:30 AM',
     eventAddress: 'Khammam Residence',
   },
   {
     _id: 'pellikuthuru',
-    eventName: 'PELLIKUTHURU',
+    eventName: 'Pellikuthuru',
     eventDate: '2026-11-25',
     eventTime: '11:00 AM',
     eventAddress: 'Khammam Residence',
   },
   {
     _id: 'sumuhurtham-pelli',
-    eventName: 'SUMUHURTHAM / PELLI',
+    eventName: 'Pelli',
     eventDate: '2026-11-26',
-    eventTime: '8:32 PM',
+    eventTime: '08:32 PM',
     eventAddress: 'Sri Lakshmi Gardens, Bonakal Road, Khammam',
     gLocation: {
       mapsQuery: 'Sri Lakshmi Gardens, Bonakal Road, Khammam',
@@ -59,9 +71,9 @@ export const weddingEvents: WeddingEvent[] = [
   },
   {
     _id: 'dinner',
-    eventName: 'DINNER',
+    eventName: 'Dinner',
     eventDate: '2026-11-26',
-    eventTime: 'from 7:30 PM onwards',
+    eventTime: '07:30 PM Onwards',
     eventAddress: 'Sri Lakshmi Gardens, Bonakal Road, Khammam',
     gLocation: {
       mapsQuery: 'Sri Lakshmi Gardens, Bonakal Road, Khammam',

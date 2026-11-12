@@ -11,6 +11,12 @@ export interface WeddingEvent {
   gLocation?: EventLocation;
 }
 
+export interface FamilyCardInfo {
+  roleLabel: string;
+  parentsNames: string;
+  inviteLine: string;
+}
+
 export interface WeddingDetails {
   theme: string;
   auspiciousLine: string;
@@ -30,6 +36,10 @@ export interface WeddingDetails {
   countDownDate: string; // YYYY-MM-DD
   countDownTime: string; // HH:mm (24h local)
   blessingMessage: string;
+  familiesKicker: string;
+  familiesHeading: string;
+  brideFamilyCard: FamilyCardInfo;
+  groomFamilyCard: FamilyCardInfo;
   invitedByLabel: string;
   invitedByNames: string;
   complimentsLabel: string;

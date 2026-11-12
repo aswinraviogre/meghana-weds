@@ -7,9 +7,9 @@ export const weddingDetails: WeddingDetails = {
   nameFontStyle: 'Cinzel Decorative, serif',
   brideShortName: 'Meghana',
   groomShortName: 'Dinesh',
-  brideFullName: 'Chi. La. Sow. Meghana',
+  brideFullName: 'Meghana',
   brideParents: '(Only D/o Sri Mandadapu Sai Babu - Smt. Sailaja (Late))',
-  groomFullName: 'Chi. Dinesh',
+  groomFullName: 'Dinesh',
   groomParents:
     '(Younger Son of Sri Madhupuru Venkata Rama Mohana Rao - Smt. Lakshmi, Nellore)',
   coupleDividerText: 'with',

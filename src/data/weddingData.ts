@@ -20,7 +20,7 @@ export const weddingDetails: WeddingDetails = {
   countDownDate: '2026-11-26',
   countDownTime: '20:32',
   blessingMessage:
-    'We cordially request your gracious presence to bless the couple with everlasting love & happiness at the auspicious marriage of our Daughter.',
+    'With hearts full of love and joy, we invite you to celebrate the beginning of our forever as we tie the knot.',
   familiesKicker: 'WITH LOVE & BLESSINGS',
   familiesHeading: 'The Families',
   brideFamilyCard: {

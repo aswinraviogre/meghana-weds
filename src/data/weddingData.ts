@@ -10,8 +10,7 @@ export const weddingDetails: WeddingDetails = {
   brideFullName: 'Meghana',
   brideParents: 'D/o Mandadapu Saibabu & Smt. Sailaja(late)',
   groomFullName: 'Dinesh',
-  groomParents:
-    '(Younger Son of Sri Madupuru Venkata Rama Mohana Rao - Smt. Lakshmi, Nellore)',
+  groomParents: 'S/o Madupuru Venkata Ram Mohana Rao & Smt. Lakshmi',
   coupleDividerText: 'with',
   coupleTagline: 'Two Hearts, One Journey',
   coupleImageUrl: '/assets/couple.jpg',
@@ -31,7 +30,7 @@ export const weddingDetails: WeddingDetails = {
   },
   groomFamilyCard: {
     roleLabel: "GROOM'S FAMILY",
-    parentsNames: 'Sri Madupuru Venkata Rama Mohana Rao & Smt. Lakshmi',
+    parentsNames: 'Sri Madupuru Venkata Ram Mohana Rao & Smt. Lakshmi',
     inviteLine: 'Cordially invite you to celebrate the wedding of their younger son Dinesh',
   },
   invitedByLabel: 'Invited by',

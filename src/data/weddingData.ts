@@ -32,7 +32,7 @@ export const weddingDetails: WeddingDetails = {
   groomFamilyCard: {
     roleLabel: "GROOM'S FAMILY",
     parentsNames: 'Sri Madupuru Venkata Rama Mohana Rao & Smt. Lakshmi',
-    inviteLine: 'Cordially invite you to celebrate the wedding of their younger son Dinesh (Nellore)',
+    inviteLine: 'Cordially invite you to celebrate the wedding of their younger son Dinesh',
   },
   invitedByLabel: 'Invited by',
   invitedByNames: 'Mandadapu Acthaiah - Smt. Bharathi',
